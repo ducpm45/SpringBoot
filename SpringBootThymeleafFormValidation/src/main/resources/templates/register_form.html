@@ -37,11 +37,10 @@
 		<h1>User Registration</h1>
 		<form action="#" th:action="@{/register}" method="post" th:object="${user}">
 			<div>
-			<label>Full name:</label>
-			<input type="text" th:field="*{name}" /><br/>
-			<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Full name error</span>
+				<label>Full name:</label>
+				<input type="text" th:field="*{name}" /><br/>
+				<span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Full name error</span>
 			</div>
-			
 			<div>
 			<label>E-mail:</label>
 			<input type="text" th:field="*{email}" />
@@ -97,7 +96,7 @@
 				<div></div>
 				<div><button type="submit">Register</button></div>
 				<div></div>
-			</div>		
+			</div>
 		</form>
 	</div>
 </body>

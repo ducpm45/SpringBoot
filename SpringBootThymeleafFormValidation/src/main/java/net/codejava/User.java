@@ -17,7 +17,7 @@ public class User {
 	private String name;
 	
 	@NotBlank
-	@Email(message = "Please enter a valid e-mail address")
+	@Email(message = " enter a valid e-mail address")
 	private String email;
 	
 	@NotBlank
